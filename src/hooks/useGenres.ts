@@ -23,7 +23,7 @@ const useGenres = () => {
 
     const fetchGames = async () => {
       try {
-        const response = await apiClient.get<FetchGenresResponse>("/games", {
+        const response = await apiClient.get<FetchGenresResponse>("/genres", {
           signal: controller.signal,
         });
 
